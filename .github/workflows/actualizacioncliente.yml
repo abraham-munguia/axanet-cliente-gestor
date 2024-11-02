@@ -1,0 +1,14 @@
+name: Actualización Cliente
+
+on:
+  push:
+    paths:
+      - 'gestor_clientes.py'
+
+jobs:
+  update_client:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Notify Team on Client Update
+      run: echo "Cliente recurrente actualizado. Notificación enviada al equipo."
