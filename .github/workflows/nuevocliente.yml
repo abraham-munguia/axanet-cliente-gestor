@@ -1,0 +1,15 @@
+name: Nuevo Cliente
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'gestor_clientes.py'
+
+jobs:
+  new_client:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Notify Team on New Client
+      run: echo "Nuevo cliente creado. Notificación enviada al equipo."
