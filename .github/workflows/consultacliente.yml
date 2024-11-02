@@ -1,0 +1,14 @@
+name: Consulta Cliente
+
+on:
+  push:
+    paths:
+      - 'gestor_clientes.py'
+
+jobs:
+  query_client:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Notify Team on Client Query
+      run: echo "Consulta realizada en el sistema. Notificación enviada al equipo."
